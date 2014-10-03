@@ -1,3 +1,21 @@
+:root {
+  font: 96px 'Avenir Next', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
 body {
-  font: 12px Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h1:nth-child(1) {
+	padding-top: 600px;
+	padding-top: 60vh;
+	background-image: url('/images/CLOUD_HERO_CLOUD.JPEG');
+	background-size: cover;
+	color: white;
+	text-shadow: 0 0 0 10px black;
 }
