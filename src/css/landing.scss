@@ -17,7 +17,14 @@ h1:nth-child(1) {
 	background-image: url('/images/CLOUD_HERO_CLOUD.JPEG');
 	background-size: cover;
 	color: white;
-	text-shadow: 0 0 0 10px black;
+  > span {
+    background-image: url('/images/CLOUD_HERO_CLOUD.JPEG');
+    background-size: cover;
+    -webkit-background-clip: text;
+     color: transparent;
+    -webkit-filter: "invert(1)";
+    text-shadow: 0 0 0 10px black;
+  }
 }
 
 h3 {
