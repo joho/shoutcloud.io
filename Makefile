@@ -1,5 +1,5 @@
 # Variables
-
+SRC=src
 DIST=dist
 
 # Destroy the final targets
@@ -7,8 +7,8 @@ clean:
 	rm -rf $(DIST)/*
 
 # Compile the final targets
-all: html
+all:
+	harp compile $(SRC) $(DIST)
 
-html:
-	cp -rf src/* $(DIST)
-
+server:
+	harp server $(SRC)
