@@ -1,5 +1,8 @@
 @import "../components/harp-foundation/scss/foundation";
 
+$brand_pink: #E26262;
+$brand_green: #009D90;
+
 :root {
   font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -28,6 +31,11 @@ h3 {
   font-family: "Courier New", Courier, monospace;
 }
 
+h4 {
+  padding-top: 1em;
+  color: $brand_green;
+}
+
 .ROW {
   @include grid-row();
 }
@@ -43,4 +51,15 @@ h3 {
   @extend .columns;
   @extend .small-9;
   @extend .large-12;
+}
+
+.ONE_OF_THREE_THINGS {
+  @extend .columns;
+  @extend .small-9;
+  @extend .medium-4;
+}
+
+.BULLSHIT_ICON {
+  margin: 0 auto;
+  display: block;
 }
