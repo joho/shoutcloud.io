@@ -1,22 +1,33 @@
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
-  <TITLE>SHOUTCLOUD.IO - THE CLOUD THAT SHOUTS BACK</TITLE>
+  <TITLE>SHOUTCLOUD: THE CLOUD THAT SHOUTS BACK</TITLE>
   <LINK REL="stylesheet" HREF="/css/landing.css" TYPE="text/css">
 </HEAD>
 <BODY>
 
-<H1><%- partial("_logo") %></H1>
-<H2>ALL CAPS AS A SERVICE</H2>
-<H3>
-      curl -X POST \
-      -d '{"INPUT": "hello world"}' \
-      -H 'Content-Type: application/json' \
-      HTTP://API.SHOUTCLOUD.IO/V1/SHOUT
+<DIV CLASS="HERO">
+  <DIV CLASS="ROW">
+    <DIV CLASS="LOGO">
+      <IMG SRC="images/logo.svg" ALT="SHOUTCLOUD" WIDTH="100%" />
+    </DIV>
+  </DIV>
+</DIV>
 
-      { "INPUT":"hello world",
-        "OUTPUT":"HELLO WORLD" }
-</H3>
+<DIV CLASS="ROW">
+  <DIV CLASS="CONTENT">
+    <H2>ALL CAPS AS A SERVICE</H2>
+    <H3>
+    curl -X POST \
+    -d '{"INPUT": "hello world"}' \
+    -H 'Content-Type: application/json' \
+    HTTP://API.SHOUTCLOUD.IO/V1/SHOUT
+
+    { "INPUT":"hello world",
+      "OUTPUT":"HELLO WORLD" }
+    </H3>
+  </DIV>
+</DIV>
 
 </BODY>
 </HTML>

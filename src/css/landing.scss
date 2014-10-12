@@ -1,34 +1,46 @@
+@import "../components/harp-foundation/scss/foundation";
+
 :root {
-  font: 96px 'Avenir Next', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
 
-body {
-	margin: 0;
-}
-h1 {
-	margin: 0;
-	padding: 0;
-}
-
-h1:nth-child(1) {
-	padding-top: 600px;
-	padding-top: 60vh;
+.HERO {
 	background-image: url('/images/CLOUD_HERO_CLOUD.JPEG');
 	background-size: cover;
-	color: white;
-  > span {
-    background-image: url('/images/CLOUD_HERO_CLOUD.JPEG');
-    background-size: cover;
-    -webkit-background-clip: text;
-     color: transparent;
-    -webkit-filter: "invert(1)";
-    text-shadow: 0 0 0 10px black;
+  height: 600px;
+  height: 90vh;
+
+  img {
+    padding-top: 20vh;
+    max-height: 80vh;
   }
+
+}
+
+h2 {
+  font-size: 5em;
 }
 
 h3 {
-  font-size: 0.5em;
+  font-size: 2em;
   white-space: pre;
   font-family: "Courier New", Courier, monospace;
+}
+
+.ROW {
+  @include grid-row();
+}
+
+.LOGO {
+  @extend .columns;
+  @extend .small-9;
+  @extend .medium-7;
+  @extend .small-centered;
+}
+
+.CONTENT {
+  @extend .columns;
+  @extend .small-9;
+  @extend .large-12;
 }
